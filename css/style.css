@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.root {
+    --bgcolor: #7dc0fa;
+}
+
+.page-header {
+    background-color: #75b5df;
+    padding: 1.3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bar a {
+    color: black;
+    padding:1.3rem;
+    cursor: pointer;
+}
+
+.nav-bar a.active{
+    background-color: #1e4d6d;
+}
+
+.menu-icon {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.shadow-1:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: inherit;
+    height: inherit;
+    z-index: -2;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.13);
+}
+
+.card {
+    position: relative;
+    height: 100px;
+    background: #fcfcfc;
+    margin: 20px 40px;
+    transition: 0.4s all;
+}
+
+.logincard {
+    background: #a3c8ff;
+    display: block;
+    width: 300px;
+    height: 400px;
+    align-items: center;
+}
+
+.input_ID .input_PW {
+    display: inline-block;
+}
+
+@media screen and (max-width: 850px) {
+    
+    .nav-bar {
+        display: none;
+        position: absolute;
+        top: 3.7rem;
+        left: 0;
+        width: 100%;
+        background-color: var(--bgcolor);
+        text-align: center;
+    }
+
+    .nav-bar.responsive {
+        display: block;
+    }
+
+    .nav-bar a {
+        display: block;
+    }
+
+    .menu-icon {
+        display: block;
+        z-index: 1;
+    }
+}
