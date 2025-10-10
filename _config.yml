@@ -4,3 +4,4 @@ description: 플러스가 되었으면
 show_downloads: true
 google_analytics: G-1KQNWX68W8
 theme: jekyll-theme-minimal
+nav_enabled: true
